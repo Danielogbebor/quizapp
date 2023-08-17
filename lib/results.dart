@@ -39,7 +39,7 @@ class ResultScreen extends StatelessWidget {
           children: [
             Text(
               "you've answer $numCorrectQuestions questions correctly out of $numQuestions questions",
-              style: const TextStyle(fontSize: 16),
+              style: const TextStyle(fontSize: 15, color: Colors.black),
               textAlign: TextAlign.center,
             ),
             const SizedBox(
@@ -49,7 +49,12 @@ class ResultScreen extends StatelessWidget {
             const SizedBox(
               height: 20,
             ),
-            ElevatedButton(onPressed: onSelect, child: const Text("restart quiz"))
+            ElevatedButton(
+                onPressed: onSelect,
+                child: const Text(
+                  "restart quiz",
+                  style: TextStyle(color: Colors.black),
+                ))
           ],
         ),
       ),
